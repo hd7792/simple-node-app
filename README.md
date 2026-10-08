@@ -4,16 +4,23 @@
 
 1. Clone this project
 ```
-git clone https://github.com/verma-kunal/AWS-Session.git
+git clone https://github.com/hd7792/simple-node-app.git
 ```
 2. Setup the following environment variables - `(.env)` file
 ```
-DOMAIN= ""
+DOMAIN= "http://localhost:3000"
 PORT=3000
 STATIC_DIR="./client"
 
 PUBLISHABLE_KEY=""
 SECRET_KEY=""
+
+NOTE: To get these keys follow the following steps:
+1. Sign in to Stripe 
+2. Open Settings
+3. Click on the developers tab
+4. Click on Manage API keys
+5. Both the keys will be present there
 ```
 3. Initialise and start the project
 ```
@@ -41,25 +48,32 @@ ssh -i instance.pem ubunutu@<IP_ADDRESS>
 ```
 sudo apt update
 ```
-3. Install Git - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-22-04) 
-4. Configure Node.js and `npm` - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
+3. Install Git
+4. Configure Node.js and `npm` 
 
 ### Deploying the project on AWS
 
 1. Clone this project in the remote VM
 ```
-git clone https://github.com/verma-kunal/AWS-Session.git
+git clone https://github.com/hd7792/simple-node-app.git
 ```
 2. Setup the following environment variables - `(.env)` file
 ```
-DOMAIN= ""
+DOMAIN= "http://localhost:3000"
 PORT=3000
 STATIC_DIR="./client"
 
 PUBLISHABLE_KEY=""
 SECRET_KEY=""
+
+NOTE: To get these keys follow the following steps:
+1. Sign in to Stripe 
+2. Open Settings
+3. Click on the developers tab
+4. Click on Manage API keys
+5. Both the keys will be present there
 ```
-> For this project, we'll have to set up an [Elastic IP Address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) for our EC2 & that would be our `DOMAIN`
+> For this project, we'll have to set up an Elastic IP Address for our EC2 & that would be our `DOMAIN`
 
 3. Initialise and start the project
 ```
