@@ -1,33 +1,5 @@
 # Deploying a Node Js Application on AWS EC2
 
-### Testing the project locally
-
-1. Clone this project
-```
-git clone https://github.com/hd7792/simple-node-app.git
-```
-2. Setup the following environment variables - `(.env)` file
-```
-DOMAIN= "http://localhost:3000"
-PORT=3000
-STATIC_DIR="./client"
-
-PUBLISHABLE_KEY=""
-SECRET_KEY=""
-
-NOTE: To get these keys follow the following steps:
-1. Sign in to Stripe 
-2. Open Settings
-3. Click on the developers tab
-4. Click on Manage API keys
-5. Both the keys will be present there
-```
-3. Initialise and start the project
-```
-npm install
-npm run start
-```
-
 ### Set up an AWS EC2 instance
 
 1. Create an IAM user & login to your AWS Console
@@ -73,7 +45,6 @@ NOTE: To get these keys follow the following steps:
 4. Click on Manage API keys
 5. Both the keys will be present there
 ```
-> For this project, we'll have to set up an Elastic IP Address for our EC2 & that would be our `DOMAIN`
 
 3. Initialise and start the project
 ```
